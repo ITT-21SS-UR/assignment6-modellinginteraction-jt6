@@ -68,23 +68,23 @@ def calculate(operators, mode):
     return round(calc_time, 2)
 
 
-# returns the operator time for Card, Moran, Newell and Kieras
+# returns the operator time for Card, Moran, Newell and Kieras ( M was chosen after Kieras)
 def get_time_expert():
-    k = 0.20
+    k = 0.20  # used 0.20 because we consider us as average typing strength as we do a lot of typing (55wmp)
     p = 1.1
     h = 0.4
-    m = 1.35
+    m = 1.2
     b = 0.1
     return k, p, h, m, b
 
 
-# returns the operator time for our calculator
+# returns the operator time for our calculator ( M is the same as with expert)
 def get_time_calc():
-    k = 0.3
-    p = 1.2
-    h = 0.5
-    m = 1.45
-    b = 0.2
+    k = 0.2  # 0.198
+    p = 1.02
+    h = 0.85  # 0.845
+    m = 1.2
+    b = 0.1  # 0.099
     return k, p, h, m, b
 
 
